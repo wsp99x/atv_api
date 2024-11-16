@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick_Morty</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <form id="searchForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+            <option value="">Todos</option>
+            <option value="alive">Vivo</option>
+            <option value="dead">Morto</option>
+            <option value="unknown">Desconhecido</option>
+        </select>
+        
+        <button type="submit">Buscar</button>
+    </form>
+    <div id="app"></div>
+    <script type="module" src="src/js/app.js" defer></script>
+</body>
+</html>
